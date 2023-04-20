@@ -1,0 +1,23 @@
+# Écrire la ou les correspondances (patterns) qui répondent à chaque TODOs
+# TODO 01 : ignorer le fichier nommé file.txt
+Ex2/**/file.txt
+
+# TODO 02 : ignorer tous les fichier d'extension .xlsx
+Ex2/**/*.xlsx
+
+# TODO 03 : Ne pas ignorer le fichier data.xlsx
+!Ex2/**/data.xlsx
+
+# TODO 04 : ignorer le dossier nommé dossierAIgnorer
+Ex2/dossierAIgnorer/
+
+# TODO 05 : ignorer le contenu du dossier nommé ignorerExcept à l'exception du sous-dossier 
+# nommé nePasIgnorer
+Ex2/ignorerExcept/*
+!Ex2/ignorerExcept/nePasIgnorer/
+
+# TODO 06 : ignorer le contenu du dossier bin/debug à l'exception 
+# du dossier images
+Ex2/bin/debug/*
+!Ex2/bin/debug/images
+
